@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "../styles/itemsDisplay.module.css";
 
 export default function ItemsDisplay(props) {
 	const showItem = (item) => {

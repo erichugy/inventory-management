@@ -1,12 +1,5 @@
 import { useState } from "react";
 
-// {
-//     name:
-//     price:
-//     type:
-//     brand:
-// };
-
 export default function SearchBar(props) {
 	const [name, setName] = useState("");
 	const [price, setPrice] = useState(0);
@@ -49,7 +42,9 @@ export default function SearchBar(props) {
 					value={brand}
 					onChange={(e) => setBrand(e.target.value)}
 				/>
-				<button type="button" onClick={searchButtonPressed}>
+				<button
+					type="button"
+					onClick={searchButtonPressed}>
 					Search
 				</button>
 			</form>
