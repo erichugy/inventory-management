@@ -10,6 +10,8 @@ export default function ItemsDisplay(props) {
 				<p>Price: {item.price}</p>
 				<p>Type: {item.type}</p>
 				<p>Brand: {item.brand}</p>
+				<p className={styles.blue}>Blue Text</p>
+				<p className={styles.red}>Red Text</p>
 			</div>
 		);
 	};

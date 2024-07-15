@@ -3,6 +3,12 @@ import "./App.css";
 import SearchBar from "./components/SearchBar";
 import AddItem from "./components/AddItem";
 import ItemsDisplay from "./components/ItemsDisplay";
+import styled from "styled-components";
+
+const Title = styled.h1`
+	color: ${(props) => props.color || "black"};
+	font-weight: bold;
+`;
 
 function App() {
 	const [filters, setFilter] = useState({});
@@ -23,9 +29,11 @@ function App() {
 
 	return (
 		<div className="App">
+			<Title color="red">Title</Title>
 			<SearchBar updateSearchParams={updateFilters} />
 			<ItemsDisplay items={data["items"]} />
 			<AddItem addItem={addItemToData} />
+			<p className="blue">Blue?</p>
 		</div>
 	);
 }
