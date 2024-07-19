@@ -29,6 +29,7 @@ export default function ItemsDisplay(props) {
 						</tr>
 					</thead>
 					<tbody>
+						{console.log("Data to display: " + props.items)}
 						{props.items?.map((item) => showItem(item))}
 					</tbody>
 				</table>
