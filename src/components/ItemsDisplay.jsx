@@ -5,7 +5,10 @@ export default function ItemsDisplay(props) {
 	const showItem = (item) => {
 		return (
 			<div key={item.id}>
-				<p>Id: {item.id}</p>
+				<p style={{
+					color: "red",
+					fontSize: "20px"
+				}}>Id: {item.id}</p>
 				<p>Name: {item.name}</p>
 				<p>Price: {item.price}</p>
 				<p>Type: {item.type}</p>
